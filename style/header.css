@@ -1,0 +1,65 @@
+.header{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: black;
+	height: 84px;
+	width: 100%;
+}
+.nav{
+	/*background-color: red;*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: calc(8*100%/12);
+	justify-content: space-between;
+}
+.header__link{
+	display: inline-block;
+	color: white;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	text-decoration: none;
+}
+.header__link--green{
+	color: #67EE28;
+	font-weight: 500;
+	font-size: 36px;
+}
+.header__name{
+	display: flex;
+	flex-direction: row;
+	width: 220px;
+	justify-content: space-between;
+	/*background-color: blue;*/
+}
+.logo{
+	width: calc(4*100%/11);
+	display: flex;
+	justify-content: center;
+}
+.nav-links{
+	/*width: calc(11*100%/18);*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*background-color: green;*/
+	width: 100%;
+}
+.buttons{
+	/*background-color: blue;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: calc(5*100%/18);
+	padding-right: 15px;
+}
+.buttons__signup{
+	background-color: #039700;
+	border-style: none;
+	color: white;
+	width: 142px;
+	height: 30px;
+	border-radius: 12px;
+}

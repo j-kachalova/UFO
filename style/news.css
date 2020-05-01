@@ -1,0 +1,9 @@
+main{
+	display: flex;
+	justify-content: center;
+}
+.news{
+	width: 60%;
+	height: 1000px;
+	background-color: green;
+}
