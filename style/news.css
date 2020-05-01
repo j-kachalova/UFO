@@ -1,9 +1,40 @@
 main{
 	display: flex;
 	justify-content: center;
+	margin-bottom: 100px;
+	width: 100%;
 }
 .news{
-	width: 60%;
-	height: 1000px;
-	background-color: green;
+	width: 60%
+	/*background-color: green;*/
+}
+.news_h1{
+	padding-top: 43px;
+	padding-bottom: 43px;
+	font-size: 64px;
+}
+.news-blocks{
+	/*background-color: blue;*/
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.news__block{
+	width: 30%;
+	height: 311px;
+	background-color: #F5FFF0;
+	border-radius: 22px;
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+.news__img{
+	height: 242px;
+}
+.news__p{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 14px;
 }
