@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2:500,600&display=swap');
 @import "header.css";
 @import "news.css";
+@import "footer.css";
 
 *{
 	margin: 0;
