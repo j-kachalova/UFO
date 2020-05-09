@@ -38,19 +38,19 @@ main{
 	align-items: center;
 	justify-content: space-around;
 }
-.news__img-main{
-	width: 240px;
-	max-height: 180px;
-	overflow: hidden;
-	/*background-color: yellow;*/
+.news__block:hover{
+	background-color: #e6eee2;
 }
 .news__img{
-	width: 100%;
+	width: 240px;
+	height: 180px;
+	background-size: cover; 
 }
 .news__text{
-	width: 65%;
+	width: 461px;
 }
 .news__p{
+	/*background-color: yellow;*/
 	padding-left: 10px;
 	padding-right: 10px;
 	font-size: 34px;
