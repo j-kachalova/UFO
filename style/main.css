@@ -2,6 +2,7 @@
 @import "header.css";
 @import "news.css";
 @import "footer.css";
+@import "media.css";
 
 *{
 	margin: 0;
