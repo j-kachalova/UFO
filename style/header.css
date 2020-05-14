@@ -5,6 +5,7 @@
 	background-color: black;
 	height: 84px;
 	width: 100%;
+	position: fixed;
 }
 .nav{
 	/*background-color: red;*/
