@@ -7,24 +7,12 @@ main{
 	justify-content: center;
 	margin-bottom: 50px;
 	width: 100%;
-	padding-top: 84px;
-}
-.news{
-	width: 60%;
-	/*background-color: green;*/
+	padding-top: 12vh;
 }
 .news__h1{
 	padding-top: 43px;
 	padding-bottom: 43px;
 	font-size: 4em;
-}
-
-.news-blocks{
-	/*background-color: blue;*/
-	width: 100%;
-	min-height: 600px;
-	display: flex;
-	flex-direction: column;
 }
 .news-link{
 	text-decoration: none;
