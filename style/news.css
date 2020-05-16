@@ -16,7 +16,7 @@ main{
 .news__h1{
 	padding-top: 43px;
 	padding-bottom: 43px;
-	font-size: 64px;
+	font-size: 4em;
 }
 
 .news-blocks{
@@ -52,7 +52,7 @@ main{
 	background-size: cover;
 }
 .news__text{
-	width: 461px;
+	width:30vw;
 }
 .news__p{
 	/*background-color: yellow;*/
