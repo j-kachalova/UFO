@@ -8,12 +8,12 @@
 	font-family: 'Exo 2', sans-serif;
 }
 .news{
-	width: 60%;
-	background-color: green;
+	width: 774px;
+	/*background-color: green;*/
 }
 
 .news-blocks{
-	background-color: blue;
+	/*background-color: blue;*/
 	width: 100%;
 	min-height: 600px;
 	display: flex;
