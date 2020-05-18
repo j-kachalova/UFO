@@ -83,6 +83,9 @@ a.registration_buttons{
 	radial-gradient(1px 60% at 100% 50%, rgba(255,255,255,.3), transparent),
 	linear-gradient(rgb(64,73,82), rgb(72,81,90));
 }
+a.registration_buttons:hover{
+	color: black;
+}
 
 #closePopUp{
 	color: rgb(205,216,228);
@@ -137,6 +140,10 @@ input.submit_registration{
 	height: 40px;
 	border-radius: 8px 8px;
 	padding: 0
+}
+input#submit:hover{
+	background-color: black;
+	color: white;
 }
 .elements-r{
 		height: 120px;
