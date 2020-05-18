@@ -1,0 +1,81 @@
+body{
+  background-color: #89EB5B;
+}
+main{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+	width: 100%;
+	padding-top: 12vh;
+}
+div.num-close{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  padding-top: 2em;
+  padding-right: 2em;
+  padding-left: 2em;
+  box-sizing: border-box;
+}
+a.close-test{
+  color: black;
+	text-decoration: none;
+}
+a.close-test:hover{
+    color: grey;
+}
+.name-test{
+  display: flex;
+  justify-content:center;
+}
+div.test{
+  width: 100%;
+  padding-left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+	min-height: 100px;
+  /*background-color: white;*/
+  box-sizing: border-box;
+}
+.buttons-test{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.button-b{
+  border: 0;
+  width:100px;
+  padding-top:1em;
+  padding-bottom: 1em;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+}
+.button-b:hover{
+  color: green;
+}
+.button-f{
+  border: 0;
+  width:100px;
+  padding-top:1em;
+  padding-bottom: 1em;
+  border-radius: 8px;
+  background-color: blue;
+  color: white;
+}
+.button-f:hover{
+  color: grey;
+}
+.form-test{
+  min-height: 50vh;
+}
+.test-q{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.test-col{
+  padding-bottom: 2em;
+}
