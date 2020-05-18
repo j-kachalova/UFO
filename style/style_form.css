@@ -11,6 +11,8 @@
 	height: 100%;
 	position:fixed;
 	background: rgba(102, 102, 102, 0.5);
+	overflow: auto;
+	border: solid red;
 	display: none;
 }
 #registration_open:target{
