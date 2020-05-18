@@ -138,3 +138,9 @@ input.submit_registration{
 	border-radius: 8px 8px;
 	padding: 0
 }
+.elements-r{
+		height: 120px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+}
