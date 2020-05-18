@@ -57,6 +57,7 @@ div.form_main_title{
 div.title_registration{
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	width: 300px;
 	height: 60px;
 	background-color: black;
@@ -86,11 +87,13 @@ a.registration_buttons{
 #closePopUp{
 	color: rgb(205,216,228);
 	padding: .2em .2em;
+	padding-right: 1.5em;
 	text-decoration: none;
 }
 #closePopUp2{
 	color: rgb(205,216,228);
 	padding: .2em .2em;
+	padding-right: 1.5em;
 	text-decoration: none;
 }
 
