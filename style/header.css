@@ -63,13 +63,14 @@
 	padding-right: 15px;
 }
 .buttons__signup{
-	background-color: #3dba03;
+	background-color: #67EE28;
 	border-style: none;
-	color: white;
+	color: black;
+	font-weight: bolder;
 	width: 142px;
 	height: 30px;
 	border-radius: 12px;
 }
 .buttons__signup:hover{
-	color: black;
+	background-color: green;
 }

@@ -1,5 +1,6 @@
 body{
-  background-color: #89EB5B;
+  background-color: black;
+  color: white;
 }
 main{
 	display: flex;
@@ -19,7 +20,7 @@ div.num-close{
   box-sizing: border-box;
 }
 a.close-test{
-  color: black;
+  color: white;
 	text-decoration: none;
 }
 a.close-test:hover{
@@ -42,8 +43,10 @@ div.test{
 .buttons-test{
   width: 100%;
   display: flex;
+  padding-top: 10vh;
   flex-direction: row;
   justify-content: space-around;
+  color: black;
 }
 .button-b{
   border: 0;
@@ -51,11 +54,11 @@ div.test{
   padding-top:1em;
   padding-bottom: 1em;
   border-radius: 8px;
-  background-color: black;
-  color: white;
+  background-color: #67EE28;
+  font-weight: bolder;
 }
 .button-b:hover{
-  color: green;
+  background-color: green;
 }
 .button-f{
   border: 0;
@@ -63,19 +66,22 @@ div.test{
   padding-top:1em;
   padding-bottom: 1em;
   border-radius: 8px;
-  background-color: blue;
-  color: white;
+  background-color: #67EE28;
+  font-weight: bolder;
 }
 .button-f:hover{
-  color: grey;
+  background-color: green;
 }
 .form-test{
   min-height: 50vh;
 }
 .test-q{
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 .test-col{
   padding-bottom: 2em;
+}
+.test-answ{
+  padding-bottom: 0.5em
 }
