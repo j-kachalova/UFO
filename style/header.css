@@ -15,6 +15,9 @@
 	width: calc(8*100%/12);
 	justify-content: space-between;
 }
+.header__name-img{
+	height: 49px;
+}
 .header__link{
 	display: inline-block;
 	color: white;
