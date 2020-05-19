@@ -1,4 +1,6 @@
 body{
+  background-image: url(../pictures/background_1.png);
+  background-size: 100%;
   background-color: black;
   color: white;
 }
@@ -7,7 +9,10 @@ main{
 	justify-content: center;
 	margin-bottom: 50px;
 	width: 100%;
-	padding-top: 12vh;
+	padding-top: 84px;
+}
+.header{
+    border-bottom: 1px solid #67EE28;
 }
 div.num-close{
   width: 100%;
@@ -17,6 +22,7 @@ div.num-close{
   padding-top: 2em;
   padding-right: 2em;
   padding-left: 2em;
+  padding-bottom: 1em;
   box-sizing: border-box;
 }
 a.close-test{
@@ -33,6 +39,7 @@ a.close-test:hover{
 div.test{
   width: 100%;
   padding-left: 20%;
+  padding-bottom: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -40,40 +47,21 @@ div.test{
   /*background-color: white;*/
   box-sizing: border-box;
 }
-.buttons-test{
+
+.block-test{
   width: 100%;
-  display: flex;
-  padding-top: 10vh;
-  flex-direction: row;
-  justify-content: space-around;
-  color: black;
-}
-.button-b{
-  border: 0;
-  width:100px;
-  padding-top:1em;
-  padding-bottom: 1em;
-  border-radius: 8px;
-  background-color: #67EE28;
-  font-weight: bolder;
-}
-.button-b:hover{
-  background-color: green;
-}
-.button-f{
-  border: 0;
-  width:100px;
-  padding-top:1em;
-  padding-bottom: 1em;
-  border-radius: 8px;
-  background-color: #67EE28;
-  font-weight: bolder;
-}
-.button-f:hover{
-  background-color: green;
-}
-.form-test{
   min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.test-img{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+	background-size: cover;
 }
 .test-q{
   padding-top: 1em;
@@ -84,4 +72,40 @@ div.test{
 }
 .test-answ{
   padding-bottom: 0.5em
+}
+.test-res{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.buttons-test{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: black;
+}
+.button-b, .button-f{
+  border: 0;
+  width:100px;
+  padding-top:1em;
+  padding-bottom: 1em;
+  border-radius: 8px;
+  background-color: #67EE28;
+  font-weight: bolder;
+}
+.button-again, .button-other{
+  border: 0;
+  width:150px;
+  padding-top:1em;
+  padding-bottom: 1em;
+  border-radius: 8px;
+  background-color: #67EE28;
+  font-weight: bolder;
+}
+.button-again:hover, .button-other:hover,
+.button-f:hover, .button-b:hover{
+  background-color: green;
 }
