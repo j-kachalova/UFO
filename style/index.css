@@ -9,6 +9,7 @@ main{
 
 div.index{
   width: 774px;
+	min-height: 85vh;
 	margin-left: 5vw;
 	margin-right: 5vw;
 }
