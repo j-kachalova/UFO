@@ -9,6 +9,8 @@ main{
 
 div.index{
   width: 774px;
+	margin-left: 5vw;
+	margin-right: 5vw;
 }
 
 h1.index__h1{
@@ -36,7 +38,7 @@ li.index__li{
 }
 
 a.index__text__links{
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 a.profile__links{

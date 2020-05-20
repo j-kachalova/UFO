@@ -1,8 +1,6 @@
 body{
-  background-image: url(../pictures/background_1.png);
+  background-image: url(../pictures/background.png);
   background-size: 100%;
-  background-color: black;
-  color: white;
 }
 main{
 	display: flex;
@@ -26,7 +24,7 @@ div.num-close{
   box-sizing: border-box;
 }
 a.close-test{
-  color: white;
+  color: black;
 	text-decoration: none;
 }
 a.close-test:hover{
@@ -71,7 +69,8 @@ div.test{
   padding-bottom: 2em;
 }
 .test-answ{
-  padding-bottom: 0.5em
+  padding-bottom: 2.5em;
+
 }
 .test-res{
   width: 90%;
