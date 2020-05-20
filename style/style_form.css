@@ -1,11 +1,4 @@
-/*
-*{
-	font-family: Helvetica;
 
-	padding:0;
-	margin: 0;
-}
-*/
 #registration_open{
 	width: 100%;
 	height: 100%;
@@ -15,6 +8,7 @@
 	border: solid red;
 	display: none;
 }
+
 #registration_open:target{
 	display: block;
 }
@@ -33,14 +27,11 @@
 	display: block;
 }
 
-
 div.registration{
 	justify-content: center;
 	align-items: center;
 	display: flex;
-
 	min-height: 578px;
-
 	font-family: Helvetica;
 	padding:0;
 	margin: 0;
@@ -68,6 +59,7 @@ ul.registration_buttons{
 	margin: 0;
 	padding: 4px;
 }
+
 ul.registration_buttons li{
 	display: inline;
 	margin-right: 5px;
@@ -83,6 +75,7 @@ a.registration_buttons{
 	radial-gradient(1px 60% at 100% 50%, rgba(255,255,255,.3), transparent),
 	linear-gradient(rgb(64,73,82), rgb(72,81,90));
 }
+
 a.registration_buttons:hover{
 	color: black;
 }
@@ -93,6 +86,7 @@ a.registration_buttons:hover{
 	padding-right: 1.5em;
 	text-decoration: none;
 }
+
 #closePopUp2{
 	color: rgb(205,216,228);
 	padding: .2em .2em;
@@ -100,33 +94,42 @@ a.registration_buttons:hover{
 	text-decoration: none;
 }
 
-
 div.form_child_title{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/*background-color: yellow;*/
+	/*
+	background-color: yellow;
+	*/
 	width: 300px;
 	height: 360px;
 }
+
 form.registration{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	/*ckground-color: red;*/
+	/*
+	background-color: red;
+	*/
 	width: 230px;
 	height: 300px;
 }
+
 div.elements_registration{
-	/*background-color: red;*/
+	/*
+	background-color: red;
+	*/
 	width: 215px;
 	color:white;
 }
+
 div.titles{
 	font-size: 0.8em;
 	padding: 5px;
 }
+
 input.registration{
 	width: 195px;
 	height: 27px;
@@ -135,16 +138,19 @@ input.registration{
 	padding-right: 10px;
 	border-style: none;
 }
+
 input.submit_registration{
 	width: 150px;
 	height: 40px;
 	border-radius: 8px 8px;
 	padding: 0
 }
+
 input#submit:hover{
 	background-color: black;
 	color: white;
 }
+
 .elements-r{
 		height: 120px;
 		display: flex;
