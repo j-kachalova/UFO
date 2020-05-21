@@ -29,7 +29,7 @@ div.profile_img{
 }
 
 div.profile_form{
-	width: 360px;
+	width: 320px;
 	display: flex;
   flex-direction: column;
 }
@@ -51,6 +51,8 @@ p.profile_form_text{
 }
 
 form.profile_form{
+	border: 2px solid black;
+	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -63,6 +65,7 @@ img.profile_img{
   border-radius: 4px;
 }
 input{
+	border-color: #67EE28;
 	border-radius: 8px;
 	height: 25px;
 	width: 200px;
@@ -73,4 +76,9 @@ input{
 }
 .profile-submit{
 	height: 30px;
+	background-color: #67EE28;
+	font-weight: bolder;
+}
+.profile-submit:hover{
+		background-color: green;
 }
