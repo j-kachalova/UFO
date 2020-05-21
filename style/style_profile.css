@@ -29,7 +29,7 @@ div.profile_img{
 }
 
 div.profile_form{
-	width: 320px;
+	width: 330px;
 	display: flex;
   flex-direction: column;
 }
@@ -51,6 +51,7 @@ p.profile_form_text{
 }
 
 form.profile_form{
+	padding-top: 10px;
 	border: 2px solid black;
 	border-radius: 10px;
 	display: flex;
