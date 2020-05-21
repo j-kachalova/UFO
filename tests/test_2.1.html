@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
-		<link rel="stylesheet" href="style/style_test.css">
-		<link rel="stylesheet" href="style/media_news.css">
-		<link rel="stylesheet" href="style/media.css">
-		<link rel="stylesheet" href="style/style_form.css">
+		<link rel="stylesheet" href="../style/main.css">
+		<link rel="stylesheet" href="../style/style_test.css">
+		<link rel="stylesheet" href="../style/media_news.css">
+		<link rel="stylesheet" href="../style/media_test.css">
+		<link rel="stylesheet" href="../style/media.css">
+		<link rel="stylesheet" href="../style/style_form.css">
 	</head>
 	<body>
 		<!-- -->
@@ -15,20 +16,20 @@
 			<div class="logo">
 				<a class="header__link header__link--green" href="index.html">
 					<div class="header__name">
-						<img class="header__name-img" src="pictures/icon.svg" alt="icon with UFO" height="49 px">
+						<img class="header__name-img" src="../pictures/icon.svg" alt="icon with UFO" height="49 px">
 						<p class="header__name-p"> Название </p>
 					</div>
 				</a>
 			</div>
 			<nav class="nav">
 				<ul class="nav-links">
-					<a class="header__link" href="index.html"> НОВОСТИ </a>
+					<a class="header__link" href="news.html"> НОВОСТИ </a>
 					<a class="header__link" href="tests.html"> ТЕСТЫ </a>
 
-					<a class="header__link" href="#"> О НАС </a>
+					<a class="header__link" href="index.html#aboutUs"> О НАС </a>
 					<div class="buttons">
 						<a class="header__link" href="#" target="_blank">
-							<img class="header__name-img" src="pictures/user.svg" alt="user" height="32 px">
+							<img class="header__name-img" src="../pictures/user.svg" alt="user" height="32 px">
 						</a>
 						<button class="buttons__signup" onclick="document.location.href='#registration_open'">Регистрация/Вход </button>
 					</div>
@@ -106,7 +107,7 @@
 		<main>
 			<div class="news">
 				<div class="num-close">
-					<p>1/N
+					<p>2/3
 					</p>
 					<a href="tests" class="close-test"> X
 					</a>
@@ -117,9 +118,9 @@
 						<div class="test">
 							<p class="test-q">Какое у вас состояние разума?</p>
 							<div class="test-col">
-						    <p class="test-answ"><input name="dzen" type="radio" value="nedzen"> Не дзен</p>
-						    <p class="test-answ"><input name="dzen" type="radio" value="dzen"> Дзен</p>
-						    <p class="test-answ"><input name="dzen" type="radio" value="pdzen" checked> Полный дзен</p>
+						    <p class="test-answ"><input class="test-radio" name="dzen" type="radio" value="dzen"> Не дзен</p>
+						    <p class="test-answ"><input class="test-radio" name="dzen" type="radio" value="dzen"> Дзен</p>
+						    <p class="test-answ"><input class="test-radio" name="dzen" type="radio" value="pdzen" checked> Полный дзен</p>
 							</div>
 					</div>
 					<div class="buttons-test">

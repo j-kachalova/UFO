@@ -1,0 +1,7 @@
+@media (max-width:480px) {
+  div.index{
+    width: 100%;
+  }
+  h1.index__h1{
+      font-size:3em;
+}

@@ -1,0 +1,18 @@
+@import "media.css";
+@media (max-width:480px){
+  .news-blocks{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 90vw;
+  }
+  .news__h2{
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .news__article-img{
+    width: 90vw;
+  }
+  .news__day{
+    width: 90vw;
+  }
+}

@@ -12,6 +12,7 @@ main{
 }
 .news{
 	width: 774px;
+	min-height: 85vh;
 	/*background-color: green;*/
 }
 
