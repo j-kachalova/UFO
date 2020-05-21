@@ -5,18 +5,53 @@ body{
 }
 
 main.profile_page{
-	display: flex;
 	margin-bottom: 50px;
 	width: 100%;
 	padding-top: 84px;
 }
 
-.profile_img{
-	width: 250px;
-	height: 300px;
-  border: 3px solid #ddd;
-  border-radius: 4px;
-  margin-left: 15px;
-  margin-top: 15px;
+div.profile{
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 4%;
+  display: flex;
+  flex-direction: row;
+}
 
+div.profile_img{
+ flex-direction: column;
+}
+
+div.profile_form{
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+
+h2.profile_form_user{
+  font-size: 2em;
+}
+
+h2.profile_form_email{
+  font-size: 2em;
+}
+
+h3.profile_form_changepass{
+  font-size: 1.6em;
+}
+
+p.profile_form_text{
+  font-size: 1.1em;
+}
+
+form.profile_form{
+}
+
+
+img.profile_img{
+  min-width: 250px;
+  min-height: 300px;
+  margin-right: 25%;
+  border: 3px solid #808080;
+  border-radius: 4px;
 }
