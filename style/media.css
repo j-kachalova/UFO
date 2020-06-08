@@ -5,14 +5,14 @@
   main{
     margin-bottom: 25px;
   }
+  .header{
+    justify-content: space-between;
+  }
   .logo{
-    width: 100%;
+    width: 50%;
   }
- .nav{
-    flex-direction: column;
-  }
-  .nav-links{
-    flex-direction: column;
+  .header__name{
+      width: 100%;
   }
   .news{
     width: 100%;
@@ -21,6 +21,28 @@
   .ad{
     position:absolute;
     top:-9999px;
+  }
+  .header__link{
+    display: none;
+  }
+  .header__link--green{
+    display: flex;
+  }
+  .header__link--img{
+    display: inline-block;
+  }
+  .header__menu{
+  	display: block;
+  }
+  input.registration{
+  height: 40px;
+  }
+
+  div.form_main_title{
+    height: 550px;
+  }
+  .nav{
+    width: 30%;
   }
 }
 

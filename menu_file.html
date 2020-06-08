@@ -3,24 +3,23 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/main.css">
+		<link rel="stylesheet" href="style/news.css">
+		<link rel="stylesheet" href="style/media_news.css">
 		<link rel="stylesheet" href="style/media.css">
-		<link rel="stylesheet" href="style/media_index.css">
 		<link rel="stylesheet" href="style/style_form.css">
+		<link rel="stylesheet" href="style/style_menu.css">
 	</head>
 	<body>
+		<!-- -->
 		<header class="header">
 			<div class="logo">
 				<a class="header__link header__link--green" href="#">
 					<div class="header__name">
-						<img class="header__name-img" src="pictures/icon.svg" alt="icon with UFO" height="49 px">
-						<p class="header__name-p"> Название </p>
+						<img class="header__name-img" src="pictures/icon.svg" alt="icon with UFO" height="45 px">
+						<p class="header__name-p"> Тарелка </p>
 					</div>
 				</a>
-			</div>
-			<div class="header__menu" onclick="document.location.href='#menu_open'">
-					<img class="header__menu-img" src="pictures/menu.svg" alt="user" height="32 px">
 			</div>
 			<nav class="nav">
 				<ul class="nav-links">
@@ -28,18 +27,19 @@
 					<a class="header__link" href="tests.html"> ТЕСТЫ </a>
 					<a class="header__link" href="#aboutUs"> О НАС </a>
 					<div class="buttons">
-						<a class="header__link" href="profile.html">
+						<a class="header__link header__link--img" href="profile.html">
 							<img class="header__name-img" src="pictures/user.svg" alt="user" height="32 px">
 						</a>
 						<button class="buttons__signup" onclick="document.location.href='#registration_open'">Регистрация/Вход </button>
+						<div class="header__menu" onclick="document.location.href='#menu_open'">
+								<img class="header__menu-img" src="pictures/menu.svg" alt="user" height="32 px">
+						</div>
 					</div>
+
 				</ul>
 
 			</nav>
 		</header>
-
-		<!--PopUp окно регистрации пришлось вшить в index, что бы все корректно отображалось -->
-
 		<div id="registration_open">
 			<div class="registration">
 				<div class="form_main_title">
@@ -106,37 +106,14 @@
 			</div>
 		</div>
 
-		<div class="menu_open">
-
-		</div>
-
-		<main>
-			<div class="index">
-				<h1 class="index__h1">Чем заняться на сайте?</h1>
-				<p class="index__p">Вам скучно и вы не знаете, что почитать? Добро пожаловать на наш сайт! Только у нас вы сможете найти актуальные новости на сегодняшний день, что тщательно скрывает от нас мировое правительство, во вкладке "<a class="index__text__links" href="news.html">Новости</a>"!</p>
-				<p class="index__p">Там вы найдете всю информацию о пришельцах, иллюминатах, призраков, секретные данные разведки ВВС США по НЛО и многое, многое другое! Скорее заваривайте чаю, берите вкусняшки и читайте наши новости!</p>
-				<p class="index__p">Вам кажется, что ваш разум находится под контролем инопланетян? Ваш друг странно начал себя вести? Возможно он не тот, за кого себя выдает! Пройдите тесты, которые были составлены лучшими учеными в области научной фантастики, во вкладке "<a class="index__text__links" href="tests.html">Тесты</a>"!</p>
-				<h2 class="index__h2" id="aboutUs">О нас</h2>
-				<p class="index__p">Тут вы найдете всю информацию, касательно нашего сайта и его администраторов</p>
-				<p class="index__p"><strong>Attention!</strong> Весь контент нашего сайта несет исключительно развлекательный характер. Все новости являются художественным вымыслом. Авторы сайта не несут ответственности за любой причиненный ущерб (в том числе, вашей психике)</p>
-				<h3 class="index__h3">Зачем сайт был создан?</h3>
-				<p class="index__p">Сайт был создан для демонстрации всех приобритенных навыков за первый курс обучения в СГТУ им. Юрия Алексеевича Гагарина, по специальности Б1-ИФСТ-11 (ИНПИТ). </p>
-				<p class="index__p">Поставьте автоматом 5, пожалуйста</p>
-				<h3 class="index__h3">Как с нами связаться?</h3>
-				<p class="index__p">Ссылки на страницы в вк создателей сайта:</p>
-				<ul>
-					<li class="index__li">
-						<a class="profile__links" href="https://vk.com/id244377455">Качалова Юля</a>
-					</li>
-					<li class="index__li">
-						<a class="profile__links" href="https://vk.com/ffhhdf355">Бодров Никита</a>
-					</li>
+		<div class="menu-open">
+			<nav class="nav-menu">
+				<ul class="navmenu-links">
+					<a class="menu-open__link" href="news.html"> НОВОСТИ </a>
+					<a class="menu-open__link" href="tests.html"> ТЕСТЫ </a>
+					<a class="menu-open__link" href="#aboutUs"> О НАС </a>
 				</ul>
-			</div>
-		</main>
-
-		<footer>
-
-		</footer>
+		</div>
+		<script src="js/script_menu.js"></script>
 	</body>
 </html>

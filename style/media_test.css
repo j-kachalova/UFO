@@ -19,7 +19,7 @@
     padding-right: 5vw;
   }
   .header{
-    z-index: 2;
+    z-index: 999;
   }
   div.test{
     padding-bottom: 0;
@@ -33,7 +33,7 @@
     margin-right: 40px;
   }
   .header{
-    z-index: 2;
+    z-index: 999;
   }
   .test-answ{
     padding-bottom: 4em;

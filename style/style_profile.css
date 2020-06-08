@@ -5,7 +5,7 @@ body{
 }
 
 main.profile_page{
-	min-height: 90vh;
+	min-height: 100vh;
 	width: 100%;
 	padding-top: 84px;
 	display: flex;
@@ -68,7 +68,7 @@ img.profile_img{
 input{
 	border-color: #67EE28;
 	border-radius: 8px;
-	height: 25px;
+	height: 40px;
 	width: 200px;
 	margin: 1em;
 	padding-left: 10px;
@@ -76,7 +76,7 @@ input{
 	box-sizing: border-box;
 }
 .profile-submit{
-	height: 30px;
+	height: 50px;
 	background-color: #67EE28;
 	font-weight: bolder;
 }

@@ -16,6 +16,14 @@
 	div.profile{
 		width: 90vw;
 	}
+	input{
+		width: 250px;
+		height: 50px;
+		font-size: 1.20em;
+	}
+	#uploadfile{
+		font-size: 0.80em;
+	}
 }
 @media (max-width:1050px) and (min-width:801px){
 	body{
