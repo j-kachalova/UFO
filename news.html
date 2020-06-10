@@ -107,7 +107,9 @@
 		<main>
 			<div class="news">
 				<h1 class="news__h1">Новости</h1>
-				<button> Настроить подборку новостей под себя </button>
+				<button id="open-settings" onclick="openForm('open-settings','close-settings','news-service','delete-setting')"> Настроить подбор новостей </button>
+				<button id="close-settings" onclick="closeForm('open-settings','close-settings','news-service','delete-setting')"> Закрыть настройку </button>
+				<button id="delete-setting" onclick="deleteD()"> Сбросить настройки подбора новостей </button>
 				<form id="news-service">
 			    <fieldset class="q-service">
 			      <legend class="leg-service">О каких странах вы хотите читать новости?</legend>

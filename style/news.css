@@ -60,6 +60,9 @@ main{
 		font-size: 1.3em;
 		padding-top:15px;
 }
+#news-service{
+	display: none;
+}
 .q-service{
 	display: flex;
 	flex-direction: column;
@@ -77,4 +80,7 @@ main{
 	border-radius: 11px;
 	padding: 10px;
 	border: 1px solid #72B571;
+}
+#close-settings, #delete-setting{
+	display: none;
 }

@@ -1,4 +1,4 @@
-function NewsCard(title, kind, poster, country = "Россия", link) {
+function NewsCard(title, kind, poster, country = "Россия", link = "#") {
   this.title = title,
     this.kind = kind,
     this.poster = poster,
@@ -14,6 +14,25 @@ let news = [
   //йети
   new NewsCard("В ЯКУТИИ БЫЛИ ОБНАРУЖЕНЫ СЛЕДЫ НЕИЗВЕСТНОГО СУЩЕСТВА", "йети", "url(https://cdn.pixabay.com/photo/2016/08/25/17/34/bigfoot-1620140_1280.jpg)", "Россия", 'article_4.html')
 ];
+
+let idOpen, idClose, idForm, idDel;
+function openForm(idOpen, idClose, idForm, idDel){
+  document.getElementById(idForm).style.display = 'block';
+  document.getElementById(idOpen).style.display = 'none';
+  document.getElementById(idClose).style.display = 'block';
+  document.getElementById(idDel).style.display = 'block';
+}
+
+function closeForm(idOpen, idClose, idForm, idDel){
+  document.getElementById(idForm).style.display = 'none';
+  document.getElementById(idOpen).style.display = 'block';
+  document.getElementById(idClose).style.display = 'none';
+  document.getElementById(idDel).style.display = 'none';
+}
+
+function deleteD(){
+  localStorage.clear();
+}
 
 document.getElementById('news-service').addEventListener("submit", function (event) {
   event.preventDefault();
@@ -36,7 +55,6 @@ document.getElementById('news-service').addEventListener("submit", function (eve
 
 let getNewsCard = function () {
   let result = [];
-  let result1 = [];
   if (localStorage.getItem('qs1') == 'Россия') {
     result = news.filter(n => n.country == 'Россия');
   } else {
