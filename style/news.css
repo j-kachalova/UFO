@@ -60,3 +60,21 @@ main{
 		font-size: 1.3em;
 		padding-top:15px;
 }
+.q-service{
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 11px;
+	background-color: #F5FFF0;
+	border: 1px solid #72B571;
+}
+.q-service:hover{
+	background-color: #e6eee2;
+}
+.leg-service{
+	background-color: white;
+	border-radius: 11px;
+	padding: 10px;
+	border: 1px solid #72B571;
+}

@@ -12,21 +12,27 @@ let news = [
   new NewsCard("МЫ БЫЛИ В ШОКЕ, КОГДА НА ПУБЛИКЕ ПОЯВИЛСЯ ОН....", "ufo", "url(https://cdn-st1.rtr-vesti.ru/p/o_1554044.jpg)", "Не только Россия", 'article_4.html')
 ];
 
-document.getElementById('test').addEventListener("submit", function (event) {
+document.getElementById('news-service').addEventListener("submit", function (event) {
   event.preventDefault(); //Отменяет действия по умолчанию для данного события
-  let q1Inputs = document.getElementsByName('q1');
+  let q1Inputs = document.getElementsByName('qs1');
+  let q2Inputs = document.getElementsByName('qs2');
   let checkedValue = '';
   q1Inputs.forEach(function (input) {
     if (input.checked) checkedValue = input.value;
   });
-  localStorage.setItem('q1', checkedValue);
+  localStorage.setItem('qs2', checkedValue);
+  checkedValue = '';
+  q1Inputs.forEach(function (input) {
+    if (input.checked) checkedValue = input.value;
+  });
+  localStorage.setItem('qs2', checkedValue);
 
   getNewsCard();
 });
 
 let getNewsCard = function () {
   let result = [];
-  if (localStorage.getItem('q1') == 'Россия') {
+  if (localStorage.getItem('qs1') == 'Россия') {
     result = news.filter(n => n.country == 'Россия');
   } else {
     result = news.filter(n => n.country != 'Россия');
@@ -35,7 +41,6 @@ let getNewsCard = function () {
   let container = document.getElementById('news-cards');
   container.innerHTML = '';
   result.forEach(function (cardNews) {
-    console.log('lhfkghc')
     let text = document.createElement('p');
     text.classList.add('news__p');
     text.innerText = cardNews.title;

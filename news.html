@@ -107,15 +107,38 @@
 		<main>
 			<div class="news">
 				<h1 class="news__h1">Новости</h1>
-				<form id="test">
-			    <fieldset>
-			      <legend>О каких странах вы хотите читать новости?</legend>
+				<button> Настроить подборку новостей под себя </button>
+				<form id="news-service">
+			    <fieldset class="q-service">
+			      <legend class="leg-service">О каких странах вы хотите читать новости?</legend>
 			      <label for="">
-			        <input type="radio" name="q1" value="Россия" checked>
+			        <input type="radio" name="qs1" value="Россия" checked>
 			        Россия
 			      </label>
 			      <label for="">
-			        <input type="radio" name="q1" value="Зарубежные">
+			        <input type="radio" name="qs1" value="Зарубежные">
+			        Другие страны
+			      </label>
+			    </fieldset>
+					<fieldset class="q-service">
+			      <legend class="leg-service">О ком вы хотите читать новости?</legend>
+			      <label for="">
+			        <input type="radio" name="qs2" value="нло" checked>
+			        НЛО
+			      </label>
+			      <label for="">
+			        <input type="radio" name="qs2" value="йети">
+			        Йети
+			      </label>
+			    </fieldset>
+					<fieldset class="q-service">
+			      <legend class="leg-service">О каких странах вы хотите читать новости?</legend>
+			      <label for="">
+			        <input type="radio" name="qs3" value="Россия" checked>
+			        Россия
+			      </label>
+			      <label for="">
+			        <input type="radio" name="qs3" value="Зарубежные">
 			        Другие страны
 			      </label>
 			    </fieldset>
