@@ -111,4 +111,5 @@ let getNewsCard = function () {
   });
 }
 
-getNewsCard();
+if(localStorage.getItem('qs1')!=null && localStorage.getItem('qs2')!=null && localStorage.getItem('qs3')!=null)
+  {getNewsCard();}
