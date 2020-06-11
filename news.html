@@ -107,19 +107,23 @@
 		<main>
 			<div class="news">
 				<h1 class="news__h1">Новости</h1>
-				<button id="open-settings" onclick="openForm('open-settings','close-settings','news-service','delete-setting')"> Настроить подбор новостей </button>
-				<button id="close-settings" onclick="closeForm('open-settings','close-settings','news-service','delete-setting')"> Закрыть настройку </button>
-				<button id="delete-setting" onclick="deleteD()"> Сбросить настройки подбора новостей </button>
+				<button class="button-service" id="open-settings" onclick="openForm('open-settings','close-settings','news-service','delete-setting')"> Настроить подбор новостей </button>
+				<button class="button-service" id="close-settings" onclick="closeForm('open-settings','close-settings','news-service','delete-setting')"> Закрыть настройку </button>
+				<button class="button-service" id="delete-setting" onclick="deleteD()"> Сбросить настройки подбора новостей </button>
 				<form id="news-service">
 			    <fieldset class="q-service">
 			      <legend class="leg-service">О каких странах вы хотите читать новости?</legend>
 			      <label for="">
 			        <input type="radio" name="qs1" value="Россия" checked>
-			        Россия
+			        только про Россию
 			      </label>
 			      <label for="">
-			        <input type="radio" name="qs1" value="Зарубежные">
-			        Другие страны
+			        <input type="radio" name="qs1" value="Заграница">
+			        Только про другие страны
+			      </label>
+						<label for="">
+			        <input type="radio" name="qs1" value="Все">
+			        Обо всех странах
 			      </label>
 					</fieldset>
 					<fieldset class="q-service">
@@ -132,8 +136,12 @@
 			        <input type="radio" name="qs2" value="йети">
 			        Йети
 			      </label>
+						<label for="">
+			        <input type="radio" name="qs2" value="все">
+			        НЛО и йети
+			      </label>
 			    </fieldset>
-			    <button type="submit">Подобрать</button>
+			    <button class="button-service" type="submit">Подобрать</button>
 			  </form>
 				<div class="news-blocks" id="news-cards">
 					<a class="news-link" href="article_1.html">

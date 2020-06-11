@@ -57,15 +57,20 @@ let getNewsCard = function () {
   let result = [];
   if (localStorage.getItem('qs1') == 'Россия') {
     result = news.filter(n => n.country == 'Россия');
-  } else {
+  } else{
+  if (localStorage.getItem('qs1') == 'Заграница'){
     result = news.filter(n => n.country != 'Россия');
   }
+  else{
+    result = news;
+  }}
 
   if (localStorage.getItem('qs2') == 'нло') {
     result = result.filter(r => r.kind == 'нло');
   } else {
+  if((localStorage.getItem('qs2') == 'йети')){
     result = result.filter(r => r.kind != 'нло');
-  }
+  }}
 
   let container = document.getElementById('news-cards');
   container.innerHTML = '';
