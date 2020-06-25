@@ -5,6 +5,9 @@
   main{
     margin-bottom: 25px;
   }
+  .header__name-p{
+  	padding-bottom: 0px;
+  }
   .header{
     justify-content: space-between;
   }
@@ -13,6 +16,8 @@
   }
   .header__name{
       width: 100%;
+      flex-direction: row;
+      justify-content: center;
   }
   .news{
     width: 100%;
@@ -62,6 +67,9 @@
   main{
     margin-bottom: 25px;
     padding-top: 50px;
+  }
+  .header__name-p{
+  	padding-bottom: 0px;
   }
   .buttons__signup{
     margin-left: 2vw;
@@ -128,32 +136,78 @@
     margin-bottom: 25px;
     padding-top: 50px;
   }
+  .buttons{
+    width: 25vw;
+  }
   .buttons__signup{
     margin-left: 2vw;
   }
   .header{
     height: 65px;
+    justify-content: space-between;
   }
-  .nav-links{
 
-  }
   .news{
     width: 70%;
     height: 100%;
   }
   .buttons__signup{
     height: 40px;
+    font-size: 1.05em;
   }
   .ad{
     position:absolute;
     top:-9999px;
   }
+
+  .logo{
+    width: 60%;
+  }
+  .header__name{
+    width: 100%;
+  }
+
+  .header__link{
+      display: none;
+  }
+    .header__link--green{
+    display: flex;
+  }
+  .header__link--img{
+    display: inline-block;
+  }
+  .header__menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10%;
+    box-sizing: border-box;
+  }
+  input.registration{
+  height: 40px;
+  }
+  div.form_main_title{
+  height: 550px;
+}
+.nav{
+  width: 50%;
+}
+.nav-links{
+  justify-content: center;
+}
+.buttons__signup{
+  height: 45px;
+  padding: 5px;
+}
 }
 
 @media (max-width:800px) and (min-width:650px) and (min-height: 481px) {
   main{
     margin-bottom: 25px;
     padding-top: 84px;
+  }
+  .buttons{
+    width: 25vw;
   }
   .header{
     height: 84px;
@@ -173,5 +227,26 @@
 @media (max-width:1050px) and (min-width:801px){
   body{
     background-image: none;
+  }
+  .buttons{
+    width: 25vw;
+  }
+}
+@media (max-width:1366px) and (min-width:768px) and (max-height: 1366px) and (min-height:768px) {
+  .header__link{
+  	font-size: 1.5em;
+  }
+  .header__name{
+    flex-direction: row;
+    align-items: center;
+  }
+  .header__name-p{
+    padding-bottom: 10px;
+  }
+  .buttons{
+    width: 25vw;
+  }
+  .header__link--green {
+    font-size: 2.5em;
   }
 }

@@ -15,6 +15,9 @@
 	width: calc(8*100%/12);
 	justify-content: space-between;
 }
+.header__name-p{
+	padding-bottom: 10px;
+}
 .header__name-img:hover{
 	filter: invert(.5);
 }
@@ -42,10 +45,8 @@
 }
 .header__name{
 	display: flex;
-	flex-direction: row;
 	width: 220px;
 	justify-content: space-between;
-	align-items: center;
 	/*background-color: blue;*/
 }
 .logo{
