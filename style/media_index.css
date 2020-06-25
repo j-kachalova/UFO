@@ -1,7 +1,16 @@
 @media (max-width:480px) {
   div.index{
     width: 100%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    box-sizing: border-box;
   }
   h1.index__h1{
       font-size:3em;
+  }
+}
+@media (max-width:800px) and (min-width:481px){
+  div.index{
+    width: 70%;
+  }
 }

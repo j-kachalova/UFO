@@ -15,8 +15,6 @@ main{
 div.index{
   width: 774px;
 	min-height: 85vh;
-	margin-left: 5vw;
-	margin-right: 5vw;
 }
 
 h1.index__h1{
@@ -27,6 +25,12 @@ h1.index__h1{
 
 h2.index__h2{
   font-size: 3em;
+}
+h2.index__h2:before{
+	display: block;
+	content: "";
+	height: 84px;
+	margin: -84px 0 0;
 }
 
 h3.index__h3{
