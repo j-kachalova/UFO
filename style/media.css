@@ -9,7 +9,7 @@
     justify-content: space-between;
   }
   .logo{
-    width: 50%;
+    width: 60%;
   }
   .header__name{
       width: 100%;
@@ -27,12 +27,17 @@
   }
   .header__link--green{
     display: flex;
+    font-size: 32px;
   }
   .header__link--img{
     display: inline-block;
   }
   .header__menu{
-  	display: block;
+  	display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 23%;
+    box-sizing: border-box;
   }
   input.registration{
   height: 40px;
@@ -42,7 +47,14 @@
     height: 550px;
   }
   .nav{
-    width: 30%;
+    width: 25%;
+  }
+  .nav-links{
+    justify-content: center;
+  }
+  .buttons__signup{
+    height: 45px;
+    padding: 5px;
   }
 }
 
