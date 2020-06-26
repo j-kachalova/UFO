@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="style/media_test.css">
 		<link rel="stylesheet" href="style/media.css">
 		<link rel="stylesheet" href="style/style_form.css">
+		<link rel="stylesheet" href="style/style_menu.css">
 	</head>
 	<body>
 		<!-- -->
@@ -109,8 +110,7 @@
 				<div class="num-close">
 					<p>1/3
 					</p>
-					<a href="tests" class="close-test"> X
-					</a>
+					<img class="close-test" src="pictures/deleteDark.svg" alt="user" height="50 px" id="menu-close-index" onclick="nextQuestion('tests.html', 'test1-q1')">
 				</div>
 				<h1 class="name-test"> Название теста</h1>
 					<form class="block-test" action="" method="get">
@@ -118,17 +118,18 @@
 						<div class="test">
 							<p class="test-q">Какое у вас состояние разума?</p>
 							<div class="test-col">
-						    <p class="test-answ"><input class="test-radio" name="dzen" type="radio" value="dzen"> Не дзен</p>
-						    <p class="test-answ"><input class="test-radio" name="dzen" type="radio" value="dzen"> Дзен</p>
-						    <p class="test-answ"><input class="test-radio" name="dzen" type="radio" value="pdzen" checked> Полный дзен</p>
+						    <p class="test-answ"><input class="test-radio" name="test1-q1" type="radio" value="ответ1" checked> Не дзен</p>
+						    <p class="test-answ"><input class="test-radio" name="test1-q1" type="radio" value="ответ2"> Дзен</p>
+						    <p class="test-answ"><input class="test-radio" name="test1-q1" type="radio" value="ответ3"> Полный дзен</p>
 							</div>
 					</div>
 					<div class="buttons-test">
-						<button class="button-b">Назад</button>
-						<button class="button-f">Вперед</button>
+						<button class="button-b" onclick="nextQuestion('tests.html', 'test1-q1')">Назад</button>
+						<button class="button-f" onclick="nextQuestion('test_1_2.html', 'test1-q1')">Вперед </button>
 					</div>
 					</form>
 			</div>
 		</main>
+		<script src="js/script_test_q.js">		</script>
 	</body>
 </html>

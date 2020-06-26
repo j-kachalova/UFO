@@ -49,9 +49,13 @@ li.index__li{
 
 a.index__text__links{
   text-decoration: none;
+	color: green;
 }
-
+a.index__text__links:hover,a.profile__links:hover{
+	color: gray;
+}
 a.profile__links{
   text-decoration: none;
   font-size: 1.3em;
+	color: green;
 }

@@ -16,6 +16,7 @@ div.num-close{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 1.5em;
   padding-top: 2em;
   padding-right: 2em;
@@ -23,12 +24,9 @@ div.num-close{
   padding-bottom: 1em;
   box-sizing: border-box;
 }
-a.close-test{
-  color: black;
-	text-decoration: none;
-}
-a.close-test:hover{
-    color: grey;
+.close-test:hover{
+  	filter: invert(.4);
+    cursor: pointer;
 }
 .name-test{
   display: flex;
@@ -107,4 +105,12 @@ div.test{
 .button-again:hover, .button-other:hover,
 .button-f:hover, .button-b:hover{
   background-color: green;
+  cursor: pointer;
+}
+.test-radio{
+  transform:scale(2);
+  opacity:0.9;
+  cursor: pointer;
+  margin-right: 40px;
+  z-index: 1;
 }

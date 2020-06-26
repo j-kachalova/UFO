@@ -6,6 +6,7 @@
 	height: 84px;
 	width: 100%;
 	position: fixed;
+	z-index: 900;
 }
 .nav{
 	/*background-color: red;*/
@@ -82,4 +83,5 @@
 .buttons__signup:hover{
 	background-color: green;
 	color: white;
+	cursor: pointer;
 }

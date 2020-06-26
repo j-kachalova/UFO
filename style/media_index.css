@@ -8,6 +8,12 @@
   h1.index__h1{
       font-size:3em;
   }
+  p.index__p{
+    font-size: 1.4em;
+  }
+  a.index__text__links, a.profile__links{
+    font-size: 30px;
+  }
 }
 @media (max-width:800px) and (min-width:481px){
   div.index{
