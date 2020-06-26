@@ -8,32 +8,34 @@
 		<link rel="stylesheet" href="style/media_news.css">
 		<link rel="stylesheet" href="style/media.css">
 		<link rel="stylesheet" href="style/style_form.css">
+		<link rel="stylesheet" href="style/style_menu.css">
 	</head>
 	<body>
 		<!-- -->
-		<header class="header">
+		<header class="header" id="header-tests">
 			<div class="logo">
 				<a class="header__link header__link--green" href="index.html">
 					<div class="header__name">
 						<img class="header__name-img" src="pictures/icon.svg" alt="icon with UFO" height="49 px">
-						<p class="header__name-p"> Название </p>
+						<p class="header__name-p"> Тарелка </p>
 					</div>
 				</a>
+			</div>
+			<div class="header__menu" id="menu-button-tests" onclick="openMenu('menu-button-tests','menu-open-tests', 'header-tests', 'main-tests', 'footer-tests')">
+					<img class="header__menu-img" src="pictures/menu.svg" alt="user" height="40 px">
 			</div>
 			<nav class="nav">
 				<ul class="nav-links">
 					<a class="header__link" href="news.html"> НОВОСТИ </a>
 					<a class="header__link" href="#"> ТЕСТЫ </a>
-
 					<a class="header__link" href="index.html#aboutUs"> О НАС </a>
 					<div class="buttons">
 						<a class="header__link" href="profile.html">
 							<img class="header__name-img" src="pictures/user.svg" alt="user" height="32 px">
 						</a>
-							<button class="buttons__signup" onclick="document.location.href='#registration_open'">Регистрация/Вход </button>
+						<button class="buttons__signup" onclick="document.location.href='#registration_open'">Регистрация/Вход </button>
 					</div>
 				</ul>
-
 			</nav>
 		</header>
 
@@ -103,7 +105,19 @@
 					</div>
 				</div>
 
-		<main>
+			<div class="menu-open" id='menu-open-tests'>
+				<div class="close-menu" >
+						<img src="pictures/delete.svg" alt="user" height="50 px" id="menu-close-tests" onclick="closeMenu('menu-button-tests','menu-open-tests', 'header-tests', 'main-tests', 'footer-tests')">
+				</div>
+				<nav class="nav-menu">
+					<ul class="navmenu-links">
+						<a class="menu-open__link" href="news.html"> НОВОСТИ </a>
+						<a class="menu-open__link" href="tests.html"> ТЕСТЫ </a>
+						<a class="menu-open__link" href="index.html#aboutUs" > О НАС </a>
+						<a class="menu-open__link" href="profile.html"> ПРОФИЛЬ </a>
+					</ul>
+			</div>
+			<main id="main-tests">
 			<div class="news">
 				<h1 class="news__h1"> Тесты</h1>
 				<div class="news-blocks">
@@ -140,8 +154,9 @@
 				</div>
 			</div>
 		</main>
-		<footer>
+		<footer id="footer-tests">
 
 		</footer>
+		<script src="js/script_menu.js"></script>
 	</body>
 </html>

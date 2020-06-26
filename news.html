@@ -8,22 +8,25 @@
 		<link rel="stylesheet" href="style/media_news.css">
 		<link rel="stylesheet" href="style/media.css">
 		<link rel="stylesheet" href="style/style_form.css">
+		<link rel="stylesheet" href="style/style_menu.css">
 	</head>
 	<body>
-		<header class="header">
+		<header class="header" id="header-news">
 			<div class="logo">
 				<a class="header__link header__link--green" href="index.html">
 					<div class="header__name">
 						<img class="header__name-img" src="pictures/icon.svg" alt="icon with UFO" height="49 px">
-						<p class="header__name-p"> Название </p>
+						<p class="header__name-p"> Тарелка </p>
 					</div>
 				</a>
+			</div>
+			<div class="header__menu" id="menu-button-news" onclick="openMenu('menu-button-news','menu-open-news', 'header-news', 'main-news', 'footer-news')">
+					<img class="header__menu-img" src="pictures/menu.svg" alt="user" height="40 px">
 			</div>
 			<nav class="nav">
 				<ul class="nav-links">
 					<a class="header__link" href="#"> НОВОСТИ </a>
 					<a class="header__link" href="tests.html"> ТЕСТЫ </a>
-
 					<a class="header__link" href="index.html#aboutUs"> О НАС </a>
 					<div class="buttons">
 						<a class="header__link" href="profile.html">
@@ -34,6 +37,7 @@
 				</ul>
 
 			</nav>
+
 		</header>
 
 <!--PopUp окно регистрации пришлось вшить в index, что бы все корректно отображалось -->
@@ -103,8 +107,19 @@
 				</div>
 			</div>
 		</div>
-
-		<main>
+		<div class="menu-open" id='menu-open-news'>
+			<div class="close-menu" >
+					<img src="pictures/delete.svg" alt="user" height="50 px" id="menu-close-news" onclick="closeMenu('menu-button-news','menu-open-news', 'header-news', 'main-news', 'footer-news')">
+			</div>
+			<nav class="nav-menu">
+				<ul class="navmenu-links">
+					<a class="menu-open__link" href="news.html"> НОВОСТИ </a>
+					<a class="menu-open__link" href="tests.html"> ТЕСТЫ </a>
+					<a class="menu-open__link" href="index.html#aboutUs" > О НАС </a>
+					<a class="menu-open__link" href="profile.html"> ПРОФИЛЬ </a>
+				</ul>
+		</div>
+		<main id="main-news">
 			<div class="news">
 				<h1 class="news__h1">Новости</h1>
 				<div class="news-blocks">
@@ -148,8 +163,9 @@
 			</div>
 		</main>
 
-		<footer>
+		<footer id="footer-news">
 
 		</footer>
+		<script src="js/script_menu.js"></script>
 	</body>
 </html>

@@ -1,7 +1,7 @@
 .menu-open{
  width: 100%;
  min-height: 100vh;
- background-color: grey;
+ background-color: black;
  color: white;
  display: none;
 }

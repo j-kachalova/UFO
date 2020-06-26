@@ -7,22 +7,26 @@
 		<link rel="stylesheet" href="style/style_form.css">
     <link rel="stylesheet" href="style/style_profile.css">
 		<link rel="stylesheet" href="style/media_profile.css">
+		<link rel="stylesheet" href="style/style_menu.css">
 	</head>
 	<body>
-		<header class="header">
+		<header class="header" id="header-profile">
 			<div class="logo">
 				<a class="header__link header__link--green" href="index.html">
 					<div class="header__name">
 						<img class="header__name-img" src="pictures/icon.svg" alt="icon with UFO" height="49 px">
-						<p class="header__name-p"> Название </p>
+						<p class="header__name-p"> Тарелка </p>
 					</div>
 				</a>
+			</div>
+			<div class="header__menu" id="menu-button-profile" onclick="openMenu('menu-button-profile','menu-open-profile', 'header-profile', 'main-profile', 'footer-profile')">
+					<img class="header__menu-img" src="pictures/menu.svg" alt="user" height="40 px">
 			</div>
 			<nav class="nav">
 				<ul class="nav-links">
 					<a class="header__link" href="news.html"> НОВОСТИ </a>
 					<a class="header__link" href="tests.html"> ТЕСТЫ </a>
-					<a class="header__link" href="#aboutUs"> О НАС </a>
+					<a class="header__link" href="index.html#aboutUs"> О НАС </a>
 					<div class="buttons">
 						<a class="header__link" href="#">
 							<img class="header__name-img" src="pictures/user.svg" alt="user" height="32 px">
@@ -30,7 +34,6 @@
 						<button class="buttons__signup" onclick="document.location.href='#registration_open'">Регистрация/Вход </button>
 					</div>
 				</ul>
-
 			</nav>
 		</header>
 
@@ -101,8 +104,19 @@
 				</div>
 			</div>
 		</div>
-
-		<main class="profile_page">
+		<div class="menu-open" id='menu-open-profile'>
+			<div class="close-menu" >
+				<img src="pictures/delete.svg" alt="user" height="50 px" id="menu-close-profile" onclick="closeMenu('menu-button-profile','menu-open-profile', 'header-profile', 'main-profile', 'footer-profile')">
+			</div>
+			<nav class="nav-menu">
+				<ul class="navmenu-links">
+					<a class="menu-open__link" href="news.html"> НОВОСТИ </a>
+					<a class="menu-open__link" href="tests.html"> ТЕСТЫ </a>
+					<a class="menu-open__link" href="index.html#aboutUs" > О НАС </a>
+					<a class="menu-open__link" href="profile.html"> ПРОФИЛЬ </a>
+				</ul>
+		</div>
+		<main class="profile_page" id="main-profile">
       <div class="profile">
         <div class="profile_img">
           <img class="profile_img" src="pictures/profile.png" alt="Иконка пришельца">
@@ -126,8 +140,9 @@
       </div>
 		</main>
 
-		<footer>
+		<footer id="footer-profile">
 
 		</footer>
+		<script src="js/script_menu.js"></script>
 	</body>
 </html>

@@ -7,17 +7,21 @@
 		<link rel="stylesheet" href="style/style_article.css">
 		<link rel="stylesheet" href="style/media_article.css">
 		<link rel="stylesheet" href="style/style_form.css">
+		<link rel="stylesheet" href="style/style_menu.css">
 	</head>
 	<body>
 		<!-- -->
-		<header class="header">
+		<header class="header" id="header-article-1">
 			<div class="logo">
 				<a class="header__link header__link--green" href="index.html">
 					<div class="header__name">
 						<img class="header__name-img" src="pictures/icon.svg" alt="icon with UFO" height="49 px">
-						<p class="header__name-p"> Название </p>
+						<p class="header__name-p"> Тарелка </p>
 					</div>
 				</a>
+			</div>
+			<div class="header__menu" id="menu-button-article-1" onclick="openMenu('menu-button-article-1','menu-open-article-1', 'header-article-1', 'main-article-1', 'footer-article-1')">
+					<img class="header__menu-img" src="pictures/menu.svg" alt="user" height="40 px">
 			</div>
 			<nav class="nav">
 				<ul class="nav-links">
@@ -99,8 +103,19 @@
 						</div>
 					</div>
 				</div>
-
-		<main>
+		<div class="menu-open" id='menu-open-article-1'>
+			<div class="close-menu" >
+					<img src="pictures/delete.svg" alt="user" height="50 px" id="menu-close-article-1" onclick="closeMenu('menu-button-article-1','menu-open-article-1', 'header-article-1', 'main-article-1', 'footer-article-1')">
+			</div>
+			<nav class="nav-menu">
+				<ul class="navmenu-links">
+					<a class="menu-open__link" href="news.html"> НОВОСТИ </a>
+					<a class="menu-open__link" href="tests.html"> ТЕСТЫ </a>
+					<a class="menu-open__link" href="index.html#aboutUs" > О НАС </a>
+					<a class="menu-open__link" href="profile.html"> ПРОФИЛЬ </a>
+				</ul>
+		</div>
+		<main id="main-article-1">
 			<div class="news">
 				<h2 class="news__h2">МЫ БЫЛИ В ШОКЕ, КОГДА НА ПУБЛИКЕ ПОЯВИЛСЯ ОН....</h2>
 				<div class="news-blocks">
@@ -151,8 +166,9 @@
 				</div>
 			</div>
 		</main>
-		<footer>
+		<footer id="footer-article-1">
 
 		</footer>
+		<script src="js/script_menu.js"></script>
 	</body>
 </html>
