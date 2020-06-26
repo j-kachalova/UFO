@@ -18,23 +18,25 @@ let news = [
   new NewsCard("ЙЕТИ ЭТО БИОЛОГИЧЕСКИ ВЫРАЩЕННОЕ СУЩЕСТВО. ЧТО СКРЫВАЮТ ОТ НАС АМЕРИКАНЦЫ?", "йети", true, "url(https://static.tildacdn.com/tild3366-3935-4162-a636-653661313731/F9O4xRXujyIJrnhwMva0.jpg)", "США", 'article_4.html')
 ];
 
-let idOpen, idClose, idForm, idDel;
-function openForm(idOpen, idClose, idForm, idDel){
+let idOpenF, idCloseF, idForm, idDel;
+function openForm(idOpenF, idCloseF, idForm, idDel){
   document.getElementById(idForm).style.display = 'block';
-  document.getElementById(idOpen).style.display = 'none';
-  document.getElementById(idClose).style.display = 'block';
+  document.getElementById(idOpenF).style.display = 'none';
+  document.getElementById(idCloseF).style.display = 'block';
   document.getElementById(idDel).style.display = 'block';
 }
 
-function closeForm(idOpen, idClose, idForm, idDel){
+function closeForm(idOpenF, idCloseF, idForm, idDel){
   document.getElementById(idForm).style.display = 'none';
-  document.getElementById(idOpen).style.display = 'block';
-  document.getElementById(idClose).style.display = 'none';
+  document.getElementById(idOpenF).style.display = 'block';
+  document.getElementById(idCloseF).style.display = 'none';
   document.getElementById(idDel).style.display = 'none';
 }
 
 function deleteD(){
-  localStorage.clear();
+  localStorage.removeItem('qs1');
+  localStorage.removeItem('qs2');
+  localStorage.removeItem('qs3');
 }
 
 document.getElementById('news-service').addEventListener("submit", function (event) {
