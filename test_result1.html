@@ -5,9 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style/main.css">
 		<link rel="stylesheet" href="style/style_test.css">
-		<link rel="stylesheet" href="style/media.css">
+		<link rel="stylesheet" href="style/media_news.css">
 		<link rel="stylesheet" href="style/media_test.css">
+		<link rel="stylesheet" href="style/media.css">
 		<link rel="stylesheet" href="style/style_form.css">
+		<link rel="stylesheet" href="style/style_menu.css">
 	</head>
 	<body>
 		<!-- -->
@@ -104,13 +106,23 @@
 			</div>
 		</div>
 
-		<main>
+		<div class="menu-open" id='menu-open-article-1'>
+			<div class="close-menu" >
+					<img src="pictures/delete.svg" alt="user" height="50 px" id="menu-close-article-1" onclick="closeMenu('menu-button-article-1','menu-open-article-1', 'header-article-1', 'main-article-1', 'footer-article-1')">
+			</div>
+			<nav class="nav-menu">
+				<ul class="navmenu-links">
+					<a class="menu-open__link" href="news.html"> НОВОСТИ </a>
+					<a class="menu-open__link" href="tests.html"> ТЕСТЫ </a>
+					<a class="menu-open__link" href="index.html#aboutUs" > О НАС </a>
+					<a class="menu-open__link" href="profile.html"> ПРОФИЛЬ </a>
+				</ul>
+		</div>
+		<main id="main-article-1">
 			<div class="news">
 				<div class="num-close">
 					<p>
 					</p>
-					<a href="tests.html" class="close-test"> X
-					</a>
 				</div>
 				<h1 class="name-test"> Ваш итог</h1>
 					<div class="block-test" action="" >
@@ -119,11 +131,15 @@
 						<p class="test-res">Повседневная практика показывает, что дальнейшее развитие различных форм деятельности требуют определения и уточнения новых предложений. Разнообразный и богатый опыт рамки и место обучения кадров требуют определения и уточнения форм развития. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий позволяет выполнять важные задания по разработке направлений прогрессивного развития.
 						</p>
 						<div class="buttons-test">
-							<button class="button-again">Пройти тест заново</button>
+							<button class="button-again" onclick="document.location.href='test_1_1.html'">Пройти тест заново</button>
 							<button class="button-other" onclick="document.location.href='tests.html'">Пройти другие тесты</button>
 						</div>
 				</div>
 			</div>
 		</main>
+		<footer id="footer-article-1">
+
+		</footer>
+		<script src="js/script_menu.js"></script>
 	</body>
 </html>

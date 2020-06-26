@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
+		<link rel="stylesheet" href="style/main.css">
 		<link rel="stylesheet" href="style/style_test.css">
 		<link rel="stylesheet" href="style/media_news.css">
 		<link rel="stylesheet" href="style/media_test.css">
@@ -13,29 +13,30 @@
 	</head>
 	<body>
 		<!-- -->
-		<header class="header">
+		<header class="header" id="header-article-1">
 			<div class="logo">
 				<a class="header__link header__link--green" href="index.html">
 					<div class="header__name">
 						<img class="header__name-img" src="pictures/icon.svg" alt="icon with UFO" height="49 px">
-						<p class="header__name-p"> Название </p>
+						<p class="header__name-p"> Тарелка </p>
 					</div>
 				</a>
+			</div>
+			<div class="header__menu" id="menu-button-article-1" onclick="openMenu('menu-button-article-1','menu-open-article-1', 'header-article-1', 'main-article-1', 'footer-article-1')">
+					<img class="header__menu-img" src="pictures/menu.svg" alt="user" height="40 px">
 			</div>
 			<nav class="nav">
 				<ul class="nav-links">
 					<a class="header__link" href="news.html"> НОВОСТИ </a>
 					<a class="header__link" href="tests.html"> ТЕСТЫ </a>
-
 					<a class="header__link" href="index.html#aboutUs"> О НАС </a>
 					<div class="buttons">
-						<a class="header__link" href="#" target="_blank">
+						<a class="header__link" href="profile.html">
 							<img class="header__name-img" src="pictures/user.svg" alt="user" height="32 px">
 						</a>
 						<button class="buttons__signup" onclick="document.location.href='#registration_open'">Регистрация/Вход </button>
 					</div>
 				</ul>
-
 			</nav>
 		</header>
 
@@ -105,31 +106,47 @@
 			</div>
 		</div>
 
-		<main>
+		<div class="menu-open" id='menu-open-article-1'>
+			<div class="close-menu" >
+					<img src="pictures/delete.svg" alt="user" height="50 px" id="menu-close-article-1" onclick="closeMenu('menu-button-article-1','menu-open-article-1', 'header-article-1', 'main-article-1', 'footer-article-1')">
+			</div>
+			<nav class="nav-menu">
+				<ul class="navmenu-links">
+					<a class="menu-open__link" href="news.html"> НОВОСТИ </a>
+					<a class="menu-open__link" href="tests.html"> ТЕСТЫ </a>
+					<a class="menu-open__link" href="index.html#aboutUs" > О НАС </a>
+					<a class="menu-open__link" href="profile.html"> ПРОФИЛЬ </a>
+				</ul>
+		</div>
+		<main id="main-article-1">
 			<div class="news">
 				<div class="num-close">
 					<p>2/3
 					</p>
-					<img class="close-test" src="pictures/deleteDark.svg" alt="user" height="50 px" id="menu-close-index" onclick="nextQuestion('tests.html', 'test1-q2')">
+					<img class="close-test" src="pictures/deleteDark.svg" alt="user" height="50 px" id="menu-close-index" onclick="nextQuestion('tests.html', 'test1-q1')">
 				</div>
 				<h1 class="name-test"> Название теста</h1>
-					<form class="block-test" action="" method="get">
+				<form class="block-test" action="" method="get">
 
-						<div class="test">
-							<p class="test-q">Какое у вас состояние разума?</p>
-							<div class="test-col">
-						    <p class="test-answ"><input class="test-radio" name="test1-q2" type="radio" value="ответ1" checked> ответ 1</p>
-						    <p class="test-answ"><input class="test-radio" name="test1-q2" type="radio" value="ответ2"> ответ 2</p>
-						    <p class="test-answ"><input class="test-radio" name="test1-q2" type="radio" value="ответ3"> ответ 3</p>
-							</div>
-					</div>
-					<div class="buttons-test">
-						<button class="button-b" onclick="nextQuestion('test_1_1.html', 'test1-q2')">Назад</button>
-						<button class="button-f" onclick="nextQuestion('test_1_3.html', 'test1-q2')">Вперед </button>
-					</div>
-					</form>
+					<div class="test">
+						<p class="test-q">Какое у вас состояние разума?</p>
+						<div class="test-col">
+							<p class="test-answ"><input class="test-radio" name="test1-q2" type="radio" value="ответ1" checked> ответ 1</p>
+							<p class="test-answ"><input class="test-radio" name="test1-q2" type="radio" value="ответ2"> ответ 2</p>
+							<p class="test-answ"><input class="test-radio" name="test1-q2" type="radio" value="ответ3"> ответ 3</p>
+						</div>
+				</div>
+				<div class="buttons-test">
+					<button class="button-b" onclick="nextQuestion('test_1_1.html', 'test1-q2')">Назад</button>
+					<button class="button-f" onclick="nextQuestion('test_1_3.html', 'test1-q2')">Вперед </button>
+				</div>
+				</form>
 			</div>
 		</main>
+		<footer id="footer-article-1">
+
+		</footer>
+		<script src="js/script_menu.js"></script>
 		<script src="js/script_test_q.js">		</script>
 	</body>
 </html>
