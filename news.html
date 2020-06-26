@@ -122,7 +122,56 @@
 		<main id="main-news">
 			<div class="news">
 				<h1 class="news__h1">Новости</h1>
-				<div class="news-blocks">
+				<button class="button-service" id="open-settings" onclick="openForm('open-settings','close-settings','news-service','delete-setting')"> Настроить подбор новостей </button>
+				<button class="button-service" id="close-settings" onclick="closeForm('open-settings','close-settings','news-service','delete-setting')"> Закрыть настройку </button>
+				<button class="button-service" id="delete-setting" onclick="deleteD()"> Сбросить все настройки подбора новостей</br>
+					(пожалуйста, перезагрузите страницу после этого)
+				 </button>
+				<form id="news-service">
+			    <fieldset class="q-service">
+			      <legend class="leg-service">О каких странах вы хотите читать новости?</legend>
+			      <label for="">
+			        <input type="radio" name="qs1" value="Россия" checked>
+			        только про Россию
+			      </label>
+			      <label for="">
+			        <input type="radio" name="qs1" value="Заграница">
+			        Только про другие страны
+			      </label>
+						<label for="">
+			        <input type="radio" name="qs1" value="Все">
+			        Обо всех странах
+			      </label>
+					</fieldset>
+					<fieldset class="q-service">
+			      <legend class="leg-service">О ком вы хотите читать новости?</legend>
+			      <label for="">
+			        <input type="radio" name="qs2" value="нло" checked>
+			        НЛО
+			      </label>
+			      <label for="">
+			        <input type="radio" name="qs2" value="йети">
+			        Йети
+			      </label>
+						<label for="">
+			        <input type="radio" name="qs2" value="все">
+			        НЛО и йети
+			      </label>
+			    </fieldset>
+					<fieldset class="q-service">
+			      <legend class="leg-service">Вас интересуют теории заговора?</legend>
+			      <label for="">
+			        <input type="radio" name="qs3" value="да" checked>
+			        Да
+			      </label>
+			      <label for="">
+			        <input type="radio" name="qs3" value="нет">
+			        Нет
+			      </label>
+			    </fieldset>
+			    <button class="button-service" type="submit">Подобрать</button>
+			  </form>
+				<div class="news-blocks" id="news-cards">
 					<a class="news-link" href="article_1.html">
 						<div class="news__block">
 							<div class="news__img" style="background-image: url(https://cdn.pixabay.com/photo/2016/11/12/15/29/science-fiction-1819026_1280.jpg)">
@@ -146,7 +195,7 @@
 							<div class="news__img" style="background-image: url(https://img.gazeta.ru/files3/412/11497412/pentagon-80394_1920-pic4_zoom-1500x1500-99448.jpg)">
 							</div>
 							<div class="news__text">
-								<p class="news__p">НЕОБЫЧНЫЙ ЛЕТАЮЩИЙ ОБЪЕКТ БЫЛ ЗАМЕЧЕН В НОЧНОМ НЕБЕ ДЕВЯТОГО УДЕЛА.</p>
+								<p class="news__p">НЕОБЫЧНЫЙ ЛЕТАЮЩИЙ ОБЪЕКТ БЫЛ ЗАМЕЧЕН В НОЧНОМ НЕБЕ ДЕВЯТОГО УДЕЛА</p>
 							</div>
 						</div>
 					</a>
@@ -156,6 +205,24 @@
 							</div>
 							<div class="news__text">
 								<p class="news__p">МЫ БЫЛИ В ШОКЕ, КОГДА НА ПУБЛИКЕ ПОЯВИЛСЯ ОН....</p>
+							</div>
+						</div>
+					</a>
+					<a class="news-link" href="article_4.html">
+						<div class="news__block">
+							<div class="news__img" style="background-image: url(https://static.tildacdn.com/tild3366-3935-4162-a636-653661313731/F9O4xRXujyIJrnhwMva0.jpg)">
+							</div>
+							<div class="news__text">
+								<p class="news__p">ЙЕТИ ЭТО БИОЛОГИЧЕСКИ ВЫРАЩЕННОЕ СУЩЕСТВО. ЧТО СКРЫВАЮТ ОТ НАС АМЕРИКАНЦЫ?</p>
+							</div>
+						</div>
+					</a>
+					<a class="news-link" href="article_4.html">
+						<div class="news__block">
+							<div class="news__img" style="background-image: url(https://static.mk.ru/upload/iblock/80b/80b93dd94a7c0e7d31cbc61da54b32ed.jpg)">
+							</div>
+							<div class="news__text">
+								<p class="news__p">НАЙДЕНЫ ДОКАЗАТЕЛЬСТВА КОНТАКТА ИНОПЛАНЕТНОЙ ЖИЗНИ С ПРАВИТЕЛЬСТВОМ РФ</p>
 							</div>
 						</div>
 					</a>

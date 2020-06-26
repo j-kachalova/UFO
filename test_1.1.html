@@ -3,10 +3,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="../style/main.css">
-		<link rel="stylesheet" href="../style/style_test.css">
-		<link rel="stylesheet" href="../style/media.css">
-		<link rel="stylesheet" href="../style/style_form.css">
+    <link rel="stylesheet" href="style/main.css">
+		<link rel="stylesheet" href="style/style_test.css">
+		<link rel="stylesheet" href="style/media_news.css">
+		<link rel="stylesheet" href="style/media_test.css">
+		<link rel="stylesheet" href="style/media.css">
+		<link rel="stylesheet" href="style/style_form.css">
 	</head>
 	<body>
 		<!-- -->
@@ -14,7 +16,7 @@
 			<div class="logo">
 				<a class="header__link header__link--green" href="index.html">
 					<div class="header__name">
-						<img class="header__name-img" src="../pictures/icon.svg" alt="icon with UFO">
+						<img class="header__name-img" src="pictures/icon.svg" alt="icon with UFO" height="49 px">
 						<p class="header__name-p"> Название </p>
 					</div>
 				</a>
@@ -27,7 +29,7 @@
 					<a class="header__link" href="index.html#aboutUs"> О НАС </a>
 					<div class="buttons">
 						<a class="header__link" href="#" target="_blank">
-							<img class="header__name-img" src="../pictures/user.svg" alt="user" height="32 px">
+							<img class="header__name-img" src="pictures/user.svg" alt="user" height="32 px">
 						</a>
 						<button class="buttons__signup" onclick="document.location.href='#registration_open'">Регистрация/Вход </button>
 					</div>
@@ -105,22 +107,27 @@
 		<main>
 			<div class="news">
 				<div class="num-close">
-					<p>
+					<p>2/3
 					</p>
-					<a href="tests.html" class="close-test"> X
+					<a href="tests" class="close-test"> X
 					</a>
 				</div>
-				<h1 class="name-test"> Ваш итог</h1>
-					<div class="block-test" action="" >
-						<div class="test-img" style="background-image: url(https://cdn.pixabay.com/photo/2016/11/12/15/29/science-fiction-1819026_1280.jpg)">
-						</div>
-						<p class="test-res">Повседневная практика показывает, что дальнейшее развитие различных форм деятельности требуют определения и уточнения новых предложений. Разнообразный и богатый опыт рамки и место обучения кадров требуют определения и уточнения форм развития. Повседневная практика показывает, что новая модель организационной деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий позволяет выполнять важные задания по разработке направлений прогрессивного развития.
-						</p>
-						<div class="buttons-test">
-							<button class="button-again">Пройти тест заново</button>
-							<button class="button-other" onclick="document.location.href='tests.html'">Пройти другие тесты</button>
-						</div>
-				</div>
+				<h1 class="name-test"> Название теста</h1>
+					<form class="block-test" action="" method="get">
+
+						<div class="test">
+							<p class="test-q">Какое у вас состояние разума?</p>
+							<div class="test-col">
+						    <p class="test-answ"><input class="test-radio" name="dzen" type="radio" value="dzen"> Не дзен</p>
+						    <p class="test-answ"><input class="test-radio" name="dzen" type="radio" value="dzen"> Дзен</p>
+						    <p class="test-answ"><input class="test-radio" name="dzen" type="radio" value="pdzen" checked> Полный дзен</p>
+							</div>
+					</div>
+					<div class="buttons-test">
+						<button class="button-b">Назад</button>
+						<button class="button-f">Вперед</button>
+					</div>
+					</form>
 			</div>
 		</main>
 	</body>

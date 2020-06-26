@@ -81,4 +81,5 @@
 }
 .buttons__signup:hover{
 	background-color: green;
+	color: white;
 }

@@ -60,3 +60,39 @@ main{
 		font-size: 1.3em;
 		padding-top:15px;
 }
+#news-service{
+	display: none;
+}
+.q-service{
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 11px;
+	background-color: #F5FFF0;
+	border: 1px solid #72B571;
+}
+.q-service:hover{
+	background-color: #e6eee2;
+}
+.leg-service{
+	background-color: white;
+	border-radius: 11px;
+	padding: 10px;
+	border: 1px solid #72B571;
+}
+#close-settings, #delete-setting{
+	display: none;
+}
+.button-service{
+	background-color: #F5FFF0;
+	border: 4px double #72B571;
+	border-radius: 11px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.button-service:hover{
+	color: white;
+	background-color: green;
+	border: 4px double green;
+}
