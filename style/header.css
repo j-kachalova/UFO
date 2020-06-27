@@ -85,6 +85,6 @@
 	color: white;
 	cursor: pointer;
 }
-.buttons__logout{
+.buttons__logout, .buttons__signup-off{
 	display: none;
 }
