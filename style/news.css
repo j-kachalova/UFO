@@ -96,3 +96,10 @@ main{
 	background-color: green;
 	border: 4px double green;
 }
+.service-input{
+  transform:scale(2);
+  opacity:0.9;
+  cursor: pointer;
+  margin-right: 40px;
+  z-index: 1;
+}
