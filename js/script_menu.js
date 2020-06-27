@@ -43,5 +43,11 @@ if(localStorage.getItem('logIn')=='true' && localStorage.getItem('button')=='tru
   }
 }
 
+function profileWindow(){
+  if(localStorage.getItem('logIn')=='true'){
+    document.location.href='profile.html';
+  }
+  else alert('Для входа в профиль зарегистрируйтесь на сайте');
+}
 localStorage.setItem('button', 'false');
 logOut();

@@ -27,7 +27,7 @@ main{
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
   /*background-color: yellow;*/
 }
 .ad{
@@ -133,4 +133,7 @@ a.ad-link{
     50% {
         background-position: 100%;
     }
+}
+.comments__num{
+	padding: 10px;
 }
