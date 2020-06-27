@@ -89,3 +89,6 @@
 .buttons__logout, .buttons__signup-off{
 	display: none;
 }
+.close-r:hover{
+	filter: invert(.5);
+}

@@ -1,5 +1,5 @@
 footer{
-	height: 84px;
+	min-height: 84px;
 	width: 100%;
 	background-color: black;
 	color: white;
@@ -7,4 +7,16 @@ footer{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 30px;
+	box-sizing: border-box;
+}
+.footer-div{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.footer-p{
+	padding-right: 5px;
 }
