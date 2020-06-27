@@ -95,6 +95,11 @@ a.ad-link{
 	border-radius: 25px;
 	cursor: pointer;
 }
+.one-comment__img:hover{
+	width: 52px;
+	height: 52px;
+	box-shadow: 0 0px 10px;
+}
 .one-comment__name{
 	font-size: 1.2em;
 	margin-bottom: 10px;

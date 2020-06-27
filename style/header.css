@@ -21,6 +21,7 @@
 }
 .header__name-img:hover{
 	filter: invert(.5);
+	cursor: pointer;
 }
 .header__menu{
 	display: none;

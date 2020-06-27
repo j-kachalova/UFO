@@ -58,6 +58,12 @@ function comment(){
   else containerText.innerHTML = 'Зарегистрируйтесь, чтобы оставлять комментарии';
     /*.setAttribute("class", "false-text1");*/
 }
+function profileWindow(){
+  if(localStorage.getItem('logIn')=='true'){
+    document.location.href='profile.html';
+  }
+  else alert('Для входа в профиль зарегистрируйтесь на сайте');
+}
 
 localStorage.setItem('button', 'false');
 logOut();

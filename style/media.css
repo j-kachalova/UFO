@@ -14,6 +14,10 @@
   .logo{
     width: 60%;
   }
+  input.submit_registration{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .header__name{
       width: 100%;
       flex-direction: row;
@@ -45,11 +49,14 @@
     box-sizing: border-box;
   }
   input.registration{
-  height: 40px;
+    height: 40px;
+    margin-bottom: 20px;
   }
-
+  div.form_child_title{
+    height: 70%;
+  }
   div.form_main_title{
-    height: 550px;
+    height: 500px;
   }
   .nav{
     width: 25%;
