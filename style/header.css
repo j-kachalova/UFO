@@ -71,7 +71,7 @@
 	width: calc(5*100%/18);
 	padding-right: 15px;
 }
-.buttons__signup{
+.buttons__signup, .buttons__logout-active{
 	background-color: #67EE28;
 	border-style: none;
 	color: black;
@@ -80,8 +80,11 @@
 	height: 30px;
 	border-radius: 12px;
 }
-.buttons__signup:hover{
+.buttons__signup:hover, .buttons__logout-active:hover{
 	background-color: green;
 	color: white;
 	cursor: pointer;
+}
+.buttons__logout, .buttons__signup-off{
+	display: none;
 }

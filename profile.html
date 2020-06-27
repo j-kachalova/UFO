@@ -32,6 +32,7 @@
 							<img class="header__name-img" src="pictures/user.svg" alt="user" height="32 px">
 						</a>
 						<button class="buttons__signup" onclick="document.location.href='#registration_open'">Регистрация/Вход </button>
+						<button class="buttons__logout" onclick="logOutB('index.html')"> Выход </button>
 					</div>
 				</ul>
 			</nav>
@@ -39,7 +40,7 @@
 
 		<!--PopUp окно регистрации пришлось вшить в index, что бы все корректно отображалось -->
 
-		
+
 		<div class="menu-open" id='menu-open-profile'>
 			<div class="close-menu" >
 				<img src="pictures/delete.svg" alt="user" height="50 px" id="menu-close-profile" onclick="closeMenu('menu-button-profile','menu-open-profile', 'header-profile', 'main-profile', 'footer-profile')">

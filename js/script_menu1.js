@@ -18,6 +18,7 @@ function logOutB(){
   localStorage.setItem('button', 'true');
   localStorage.setItem('logIn', 'false')
   logOut();
+  comment();
 }
 let l, b;
 function logOut(l, b){
@@ -35,6 +36,7 @@ function logInB(){
   localStorage.setItem('logIn', 'true');
   localStorage.setItem('button', 'true');
   logIn();
+  comment();
 }
 function logIn(){
 if(localStorage.getItem('logIn')=='true' && localStorage.getItem('button')=='true'){
@@ -43,5 +45,20 @@ if(localStorage.getItem('logIn')=='true' && localStorage.getItem('button')=='tru
   }
 }
 
+function wind(){
+    if(localStorage.getItem('logIn')=='true') alert("Мы пошутили над вами. Вы не сможете открыть этот аккаунт");
+    else alert('Зарегистрируйтесь, чтобы посмотреть этот аккаунт');
+}
+function comment(){
+  let containerText = document.getElementsByClassName("false-text")[0];
+  if(localStorage.getItem('logIn')=='true'){
+    containerText.innerHTML = 'Мы пошутили над вами. Вы не сможете писать комментарии';
+    containerText.setAttribute("class", "false-text1");
+  }
+  else containerText.innerHTML = 'Зарегистрируйтесь, чтобы оставлять комментарии';
+    /*.setAttribute("class", "false-text1");*/
+}
+
 localStorage.setItem('button', 'false');
 logOut();
+comment();

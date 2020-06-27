@@ -33,6 +33,7 @@
 							<img class="header__name-img" src="pictures/user.svg" alt="user" height="32 px">
 						</a>
 						<button class="buttons__signup" onclick="document.location.href='#registration_open'">Регистрация/Вход </button>
+						<button class="buttons__logout" onclick="logOutB('#')"> Выход </button>
 					</div>
 				</ul>
 
@@ -101,7 +102,7 @@
 									<input class="registration "type="password" name="pswrd" id="pswrd" placeholder="Пароль">
 								</div>
 							</div>
-							<input class="submit_registration" type="submit" name="submit" id="submit" value="Войти" formtarget="#">
+							<input class="submit_registration" onclick="logInB()" type="submit" name="submit" id="submit" value="Войти" formtarget="#">
 						</form>
 					</div>
 				</div>

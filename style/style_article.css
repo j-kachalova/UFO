@@ -70,3 +70,62 @@ a.ad-link{
 	height: 30%;
 	overflow: hidden;
 }
+.comments{
+	min-height: 100px;
+	width: 100%;
+}
+.one-comment{
+	display: flex;
+	flex-direction: row;
+	min-height: 50px;
+	padding-top: 10px;
+	padding-left: 10px;
+	margin-right: 10px;
+}
+.one-comment__img-block{
+		width: 55px;
+		height: 100%;
+		margin-right: 20px;
+}
+.one-comment__img{
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	border: 1px solid black;
+	border-radius: 25px;
+	cursor: pointer;
+}
+.one-comment__name{
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+.one-comment__text{
+		width: 100%;
+		border-bottom: 1px solid grey;
+		padding-bottom: 10px;
+}
+.one-comment__text--border{
+	border-bottom: 0px;
+}
+.false-text{
+	padding: 10px;
+}
+.false-text1{
+	padding: 10px;
+	margin-top: 30px;
+	background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	animation: rainbow_animation 6s ease-in-out infinite;
+	background-size: 400%;
+}
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+}

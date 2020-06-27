@@ -33,6 +33,7 @@
 							<img class="header__name-img" src="pictures/user.svg" alt="user" height="32 px">
 						</a>
 						<button class="buttons__signup" onclick="document.location.href='#registration_open'">Регистрация/Вход </button>
+						<button class="buttons__logout" onclick="logOutB('#')"> Выход </button>
 					</div>
 				</ul>
 			</nav>
@@ -97,7 +98,7 @@
 											<input class="registration "type="password" name="pswrd" id="pswrd" placeholder="Пароль">
 										</div>
 									</div>
-									<input class="submit_registration" type="submit" name="submit" id="submit" value="Войти" formtarget="#">
+									<input class="submit_registration" onclick="logInB()" type="submit" name="submit" id="submit" value="Войти" formtarget="#">
 								</form>
 							</div>
 						</div>
@@ -130,35 +131,6 @@
 						 <div class="news__day-el"> 21/05/2025
 						 </div>
 					</div>
-				</div>
-				<div class="ad">
-					<a class="ad-link" href="article_2.html">
-						<div class="ad__block">
-							<div class="ad__img" style="background-image: url(https://cdn.pixabay.com/photo/2018/07/14/11/33/network-3537401_1280.jpg)">
-							</div>
-							<div class="ad__text">
-								<p class="ad__p">УЧЕНЫЕ В ШОКЕ ОТ НОВОЙ НАХОДКИ</p>
-							</div>
-						</div>
-					</a>
-					<a class="ad-link" href="article_3.html">
-						<div class="ad__block">
-							<div class="ad__img" style="background-image: url(https://img.gazeta.ru/files3/412/11497412/pentagon-80394_1920-pic4_zoom-1500x1500-99448.jpg)">
-							</div>
-							<div class="ad__text">
-								<p class="ad__p">НЛО БЫЛ ЗАМЕЧЕН В НОЧНОМ НЕБЕ ДЕВЯТОГО УДЕЛА.</p>
-							</div>
-						</div>
-					</a>
-					<a class="ad-link" href="article_4.html">
-						<div class="ad__block">
-							<div class="ad__img" style="background-image: url(https://cdn-st1.rtr-vesti.ru/p/o_1554044.jpg)">
-							</div>
-							<div class="ad__text">
-								<p class="ad__p">МЫ БЫЛИ В ШОКЕ, КОГДА НА ПУБЛИКЕ ПОЯВИЛСЯ ОН....</p>
-							</div>
-						</div>
-					</a>
 				</div>
 			</div>
 		</main>

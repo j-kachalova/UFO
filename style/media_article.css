@@ -16,4 +16,13 @@
   .news__day{
     width: 90vw;
   }
+  .news__article-p{
+    font-size:1.3em;
+  }
+  .one-comment__name{
+  	font-size: 1.5em;
+  }
+  .one-comment__p{
+    font-size: 1.3em;
+  }
 }
