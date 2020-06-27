@@ -14,14 +14,14 @@ function closeMenu(idOpen, idMenu, idHeader, idMain, idFooter){
   document.getElementById(idFooter).style.display = 'flex';
 }
 let page;
-function logOutB(){
+function logOutB(page){
+  document.location.href=page;
   localStorage.setItem('button', 'true');
   localStorage.setItem('logIn', 'false')
   logOut();
   comment();
 }
-let l, b;
-function logOut(l, b){
+function logOut(){
   if(localStorage.getItem('logIn')=='false' && localStorage.getItem('button')=='true'){
     document.getElementsByClassName("buttons__signup-off")[0].setAttribute("class", "buttons__signup");
     document.getElementsByClassName("buttons__logout-active")[0].setAttribute("class", "buttons__logout");

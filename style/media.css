@@ -117,7 +117,6 @@
   input.registration{
   height: 40px;
   }
-
   div.form_main_title{
     height: 550px;
   }
@@ -197,11 +196,19 @@
     box-sizing: border-box;
   }
   input.registration{
-  height: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  div.form_child_title{
+    height: 70%;
   }
   div.form_main_title{
-  height: 550px;
-}
+    height: 500px;
+  }
+  input.submit_registration{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 .nav{
   width: 50%;
 }
