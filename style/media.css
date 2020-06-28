@@ -81,6 +81,11 @@
     margin-bottom: 25px;
     padding-top: 50px;
   }
+  .buttons__logout-active{
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .header__name-p{
   	padding-bottom: 0px;
   }
